@@ -7,31 +7,35 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class FizzBuzzTest {
     @Test
     public void should_return_1_when_input_1() {
-        int order  = 1;
+        int order = 1;
         String word = FizzBuzz.countOff(order);
         assertEquals("1", word);
     }
+
     @Test
     public void should_return_2_when_input_2() {
-        int order  = 2;
+        int order = 11;
         String word = FizzBuzz.countOff(order);
-        assertEquals("2", word);
+        assertEquals("11", word);
     }
+
     @Test
     public void should_return_Fizz_when_input_multiple_of_3() {
-        int order  = 3;
+        int order = 6;
         String word = FizzBuzz.countOff(order);
         assertEquals("Fizz", word);
     }
+
     @Test
     public void should_return_Buzz_when_input_multiple_of_5() {
-        int order  = 5;
+        int order = 25;
         String word = FizzBuzz.countOff(order);
         assertEquals("Buzz", word);
     }
+
     @Test
     public void should_return_FizzBuzz_when_input_multiple_of_15() {
-        int order  = 15;
+        int order = 45;
         String word = FizzBuzz.countOff(order);
         assertEquals("FizzBuzz", word);
     }

@@ -1,17 +1,17 @@
 package tdd.fizzbuzz;
 
 public class FizzBuzz {
-    public static String countOff(int number) {
-        if (number % 3 == 0 && number % 5 != 0) {
+    public static String countOff(int order) {
+        if (order % 3 == 0 && order % 5 != 0) {
             return "Fizz";
         }
-        if (number % 5 == 0 && number % 3 != 0) {
+        if (order % 5 == 0 && order % 3 != 0) {
             return "Buzz";
         }
-        if (number % 15 == 0 ) {
+        if (order % 15 == 0) {
             return "FizzBuzz";
         }
 
-        return "" + number;
+        return "" + order;
     }
 }
