@@ -11,5 +11,11 @@ public class FizzBuzzTest {
         String word = FizzBuzz.countOff(order);
         assertEquals("1", word);
     }
+    @Test
+    public void should_return_2_when_input_2() {
+        int order  = 2;
+        String word = FizzBuzz.countOff(order);
+        assertEquals("2", word);
+    }
 
 }
