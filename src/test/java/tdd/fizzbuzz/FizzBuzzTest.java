@@ -17,5 +17,22 @@ public class FizzBuzzTest {
         String word = FizzBuzz.countOff(order);
         assertEquals("2", word);
     }
-
+    @Test
+    public void should_return_Fizz_when_input_multiple_of_3() {
+        int order  = 3;
+        String word = FizzBuzz.countOff(order);
+        assertEquals("Fizz", word);
+    }
+//    @Test
+//    public void should_return_Buzz_when_input_multiple_of_5() {
+//        int order  = 5;
+//        String word = FizzBuzz.countOff(order);
+//        assertEquals("Buzz", word);
+//    }
+//    @Test
+//    public void should_return_FizzBuzz_when_input_multiple_of_15() {
+//        int order  = 15;
+//        String word = FizzBuzz.countOff(order);
+//        assertEquals("FizzBuzz", word);
+//    }
 }
