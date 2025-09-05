@@ -29,10 +29,10 @@ public class FizzBuzzTest {
         String word = FizzBuzz.countOff(order);
         assertEquals("Buzz", word);
     }
-//    @Test
-//    public void should_return_FizzBuzz_when_input_multiple_of_15() {
-//        int order  = 15;
-//        String word = FizzBuzz.countOff(order);
-//        assertEquals("FizzBuzz", word);
-//    }
+    @Test
+    public void should_return_FizzBuzz_when_input_multiple_of_15() {
+        int order  = 15;
+        String word = FizzBuzz.countOff(order);
+        assertEquals("FizzBuzz", word);
+    }
 }
